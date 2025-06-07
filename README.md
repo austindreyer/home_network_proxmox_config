@@ -2,9 +2,9 @@
 Repo outlining steps to setup a home network based on proxmox
 
 ## Components
-1. Lenovo m910q tiny machine
+1. Lenovo m910x tiny machine
 2. USB drive with bootable proxmox .dmg file
-3. 1tb PNY m2 nvme SSD
+3. 2x1tb PNY m2 nvme SSD
 4. 1tb Crucial 2.5cm SATA SSD
 
 ## Steps
