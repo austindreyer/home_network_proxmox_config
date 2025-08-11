@@ -1,2 +1,18 @@
 ## To get DNS Server on mac terminal
 1. scutil --dns | grep 'nameserver\[[0-9]*\]'
+
+## General Topology
+1. Internet (WAN) -> ER605 Router -> TL-SG108PE POE Switch (note, cannot be adopted by Controller) 
+  - Switch goes to: 
+    0. From Router 
+    1. Lenovo m910x tiny machine (proxmox host)
+    2. 2 x EAP650 APs
+    3. 1 x EAP610 AP (outdoor)
+    4. Hardline cat5e to Nora's office
+    5. Hardline to main floor entertainment center
+2. Cloudflare one for remote access hosting
+3. Pihole for DNA serving
+4. 3 x VLANs
+    1. Management network
+    2. IoT network
+    3. Guest network 
